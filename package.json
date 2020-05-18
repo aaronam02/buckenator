@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "react-flip-move": "latest",
+    "expo-permissions": "~8.0.0",
+    "react-navigation": "^2.6.2",
+    "react-native-paper": "2.1.3",
+    "react-native-screens": "^2.0.0",
+    "react-native-elements": "latest",
+    "react-navigation-stack": "latest",
+    "@react-navigation/stack": "latest",
+    "react-native-reanimated": "1.0.0",
+    "react-navigation-drawer": "latest",
+    "@react-navigation/native": "latest",
+    "@fortawesome/react-fontawesome": "latest",
+    "react-native-safe-area-context": "^0.6.0",
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@react-native-community/masked-view": "^0.1.0"
+  }
+}
