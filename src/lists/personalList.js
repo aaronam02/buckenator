@@ -55,21 +55,18 @@ state = {
       () => this.setState({ viewMargin: viewPadding })
     );
 
-    PersonalActivities.all(personalActivities => this.setState({ personalActivities: personalActivities || [] }));
+PersonalActivities.all(personalActivities => this.setState({ personalActivities: personalActivities || [] }));
   }
 static navigationOptions = {
 //To hide the NavigationBar from current Screen
 header: null
 };
-
-  render() {
-    return (
-      <View
-        style={[styles.container, { paddingBottom: this.state.viewMargin }]}
-      >
-       <Text style = {styles.text}>
-      PERSONAL BUCKET LIST 
-      </Text>
+render() {
+  return (
+  <View style={[styles.container, { paddingBottom: this.state.viewMargin }]}>
+  <Text style = {styles.heading}>
+    PERSONAL BUCKET LIST 
+  </Text>
 
     <TextInput style={styles.textInput}
           onChangeText={this.changeTextHandler}
@@ -151,7 +148,7 @@ const styles = StyleSheet.create({
   listItem: {
     paddingTop: 2,
     paddingBottom: 2,
-    fontSize: 18,
+    fontSize: '20%',
     color: '#fff',
   },
   hr: {
@@ -172,10 +169,11 @@ const styles = StyleSheet.create({
     width: "100%",
     margin: 10,
   },
-  text: {
+  heading: {
   color: '#fff',
   fontSize: '30%',
   fontWeight: '300',
+  marginTop: 50,
   },
 
   bottom:{

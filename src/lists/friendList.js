@@ -63,23 +63,20 @@ static navigationOptions = {
 header: null
 };
 
-  render() {
-    return (
-      <View
-        style={[styles.container, { paddingBottom: this.state.viewMargin }]}
-      >
-       <Text style = {styles.text}>
+render() {
+  return (      
+    <View style={[styles.container, { paddingBottom: this.state.viewMargin }]} >
+       <Text style = {styles.heading}>
       FRIENDS BUCKET LIST 
       </Text>
-
-    <TextInput style={styles.textInput}
-          onChangeText={this.changeTextHandler}
-          onSubmitEditing={this.addTask}
-          value={this.state.text}
-          placeholder="Add Tasks"
-          returnKeyType="done"
-          returnKeyLabel="done"
-        />
+<TextInput style={styles.textInput}
+  onChangeText={this.changeTextHandler}
+  onSubmitEditing={this.addTask}
+  value={this.state.text}
+  placeholder="Add Tasks"
+  returnKeyType="done"
+  returnKeyLabel="done"
+/>
        
         <FlatList style={styles.list}
           data={this.state.friendActivities}
@@ -171,10 +168,11 @@ const styles = StyleSheet.create({
     width: "100%",
     margin: 10,
   },
-  text: {
+  heading: {
   color: '#fff',
   fontSize: '30%',
   fontWeight: '300',
+  marginTop: 50,
   },
 
   bottom:{

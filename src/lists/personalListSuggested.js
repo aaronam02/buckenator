@@ -56,7 +56,7 @@ const DATA = [
 function Item({ activity }) {
   return (
     <View style={styles.item}>
-      <Text style={styles.title}>
+      <Text style={styles.text}>
       {activity}
       </Text>
     </View>
@@ -66,9 +66,14 @@ function Item({ activity }) {
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-  <Text style={styles.text}>
-  What do you think about these recomendations?
+<View style={styles.center}>
+  <Text style={styles.title}>
+Looking for inspirations? 
   </Text>
+    <Text style={styles.title}>
+Check out these recomendations!
+  </Text>
+  </View>
     
       <FlatList
         data={DATA}
@@ -82,26 +87,29 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
-    marginTop: Constants.statusBarHeight,
-
-  justifyContent: 'center',
-alignItems: 'center',
+    backgroundColor: 'green',
   },
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 20,
+},
   item: {
   flex: 1,
   height: 40,
   paddingLeft: 20,
-  margin: 2.5,
+  justifyContent: 'center',
   borderColor:'black',
   borderBottomWidth:1,
-  backgroundColor: 'white',
   },
   title: {
-    fontSize: 20,
+    fontSize: '25%',
+    color: 'white',
+    fontWeight: '500',
   },
   text:{
-  fontSize: 30,
+  fontSize: '20%',
   fontWeight: '200',
+  color: 'white',
 },
 });

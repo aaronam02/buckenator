@@ -18,7 +18,7 @@ render() {
 
 <View style={styles.center}>
 <Image source ={logo}
- style={{ height: 100, width: 100, alignItems: 'center', marginTop: 5, }}/>
+ style={{ height: 150, width: 150, alignItems: 'center', marginTop: 50, marginBottom: 25 }}/>
 </View>  
 
 <View style={styles.loginFormView}>
@@ -30,9 +30,13 @@ render() {
 
 <TextInput placeholder="Weight" placeholderColor="#c4c3cb" style={styles.loginFormTextInput}/>
 
+<TextInput placeholder="Gender" placeholderColor="#c4c3cb" style={styles.loginFormTextInput}/>
+
 <TextInput placeholder="Email" placeholderColor="#c4c3cb" style={styles.loginFormTextInput}  secureTextEntry={false}/>
             
 <TextInput placeholder="Password" placeholderColor="#c4c3cb" style={styles.loginFormTextInput} secureTextEntry={true}/>
+
+<TextInput placeholder="Re-enter your Password" placeholderColor="#c4c3cb" style={styles.loginFormTextInput} secureTextEntry={true}/>
 </View>
 
 <View style={styles.textContainer}>
@@ -55,7 +59,7 @@ render() {
 const styles = StyleSheet.create({
 
 containerView: {
-  flex: 1,
+  flex: 4,
   backgroundColor: 'white',
   justifyContent: 'center',
 alignItems: 'center',
@@ -67,12 +71,14 @@ center: {
     alignItems: 'center',
 },
 textContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
+
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginBottom: 50,
   },
 
 loginFormView: {
-  flex: 1
+  flex: 1,
 },
 loginFormTextInput: {
   height: 50,
@@ -93,11 +99,10 @@ loginFormTextInput: {
 touchableButton1: {
  backgroundColor: 'red',
  height: 40,
- width: 200,
+ width: 250,
  alignItems: 'center',
  justifyContent: 'center',
- marginTop: 25,
- marginBottom: 25,
+ margin: 25,
  borderRadius: 30,
  borderWidth: 1,
 },

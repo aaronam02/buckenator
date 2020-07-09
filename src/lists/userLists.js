@@ -115,7 +115,7 @@ touchableButton1: {
  height: 40,
  alignItems: 'center',
  justifyContent: 'center',
- marginBottom: 10,
+ marginBottom: 50,
  borderWidth: 1,
 },
 

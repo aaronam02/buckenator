@@ -14,6 +14,13 @@ render() {
   Welcome to buckenator!
 </Text>
 
+<Text style={styles.heading}>
+ Have you ever ran out of ideas of fun activities to do with friends or familiy members? 
+</Text>
+<Text style={styles.heading2}>
+ TRY BUCKENATOR!
+</Text>
+
   <Text style={styles.text}>
      On buckenator, you can record your bucket list, create shared lists with friends or family members, check off completed activities, save pictures and or videos you took during your experiences,  and get an estimate on the cost to complete activity 
   </Text>
@@ -43,12 +50,12 @@ render() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  backgroundColor: 'white',
-   justifyContent: 'center',
-alignItems: 'center',
+container: {
 
+  flex: 1,
+  backgroundColor: 'white',
+  justifyContent: 'center',
+  alignItems: 'center',
   },
 
 center: {
@@ -62,7 +69,18 @@ text: {
   textAlign: 'center',
   margin: 10,
 },
-
+heading: {  
+  fontSize: '30%',
+  fontWeight:'450',
+  textAlign: 'center',
+  margin: 5,
+},
+heading2: {  
+  fontSize: '30%',
+  fontWeight:'600',
+  textAlign: 'center',
+  margin: 5,
+},
 header: {  
   fontSize: '32.5%',
   fontWeight:'bold',

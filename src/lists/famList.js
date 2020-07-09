@@ -62,12 +62,10 @@ static navigationOptions = {
 header: null
 };
 
-  render() {
-    return (
-      <View
-        style={[styles.container, { paddingBottom: this.state.viewMargin }]}
-      >
-       <Text style = {styles.text}>
+render() {
+  return (
+    <View style={[styles.container, { paddingBottom: this.state.viewMargin }]}>
+       <Text style = {styles.heading}>
       FAMILY BUCKET LIST 
       </Text>
 
@@ -172,10 +170,11 @@ const styles = StyleSheet.create({
     width: "100%",
     margin: 10,
   },
-  text: {
+  heading: {
   color: '#fff',
   fontSize: '30%',
   fontWeight: '300',
+  marginTop: 50,
   },
 
   bottom:{
